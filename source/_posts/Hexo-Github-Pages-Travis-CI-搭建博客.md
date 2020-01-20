@@ -148,10 +148,10 @@ deploy:
 ```
 git push origin hexo
 ```
-不出意外，一会儿Travis CI就会帮你构建好静态网页并推送到你的博客仓库的master分支上了。
+不出意外，一会儿Travis CI就会帮你构建好静态网页并推送到你博客仓库的master分支上了。
 期间想查看构建的进度或者报错信息也可以打开Travis CI的管理页查看。
 
-之后就有新的Blog或者更新，就把代码推送到hexo分支，Travis CI就会帮你构建并发布。
+之后有新的Blog或者更新，就把代码推送到hexo分支，Travis CI就会帮你构建并发布。
 
 ### 总结一下搭建的过程
 * 安装Hexo。
