@@ -7,14 +7,14 @@ branches:
   only:
     - hexo # build hexo branch only
 script:
-  - git submodule init
+  - git submodule init # 初始化submodule，不然主题就不能用了。
   - hexo generate # generate static files
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  target-branch: master
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  keep_history: true
+  target_branch: master
   on:
     branch: hexo
   local-dir: public
