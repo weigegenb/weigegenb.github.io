@@ -46,27 +46,31 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="客官请留步">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="早就有想要写Blog做些积累的心了，今年终于抄起家伙动手了。作为第一篇有实际意义的博客，就来介绍一下这个博客的搭建过程，以及期间遇到的问题吧。  目标通过username.github.io访问，将代码Push到GitHub后自动构建并部署博客。 博客架构 &amp; 选择原因经过了简单的搜索和对比，最后选择了用Markdown编写，Hexo + GitHub Pages + Travi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo + GitHub Pages + Travis CI搭建博客">
+<meta property="og:url" content="http://yoursite.com/2020/01/18/Hexo-Github-Pages-Travis-CI-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="客官请留步">
+<meta property="og:description" content="早就有想要写Blog做些积累的心了，今年终于抄起家伙动手了。作为第一篇有实际意义的博客，就来介绍一下这个博客的搭建过程，以及期间遇到的问题吧。  目标通过username.github.io访问，将代码Push到GitHub后自动构建并部署博客。 博客架构 &amp; 选择原因经过了简单的搜索和对比，最后选择了用Markdown编写，Hexo + GitHub Pages + Travi">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-18T18:49:58.000Z">
+<meta property="article:modified_time" content="2020-01-20T13:49:36.697Z">
 <meta property="article:author" content="weigege">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/01/18/Hexo-Github-Pages-Travis-CI-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>客官请留步</title>
+  <title>Hexo + GitHub Pages + Travis CI搭建博客 | 客官请留步</title>
   
 
 
@@ -171,10 +175,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/18/Hexo-Github-Pages-Travis-CI-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -188,8 +192,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/18/Hexo-Github-Pages-Travis-CI-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">Hexo + GitHub Pages + Travis CI搭建博客</a>
+          Hexo + GitHub Pages + Travis CI搭建博客
         </h1>
 
         <div class="post-meta">
@@ -220,7 +223,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
+        <blockquote>
 <p>早就有想要写Blog做些积累的心了，今年终于抄起家伙动手了。作为第一篇有实际意义的博客，就来介绍一下这个博客的搭建过程，以及期间遇到的问题吧。</p>
 </blockquote>
 <h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>通过username.github.io访问，将代码Push到GitHub后自动构建并部署博客。</p>
@@ -306,100 +309,33 @@
 <h5 id="submodule-无权限访问"><a href="#submodule-无权限访问" class="headerlink" title="submodule 无权限访问"></a>submodule 无权限访问</h5><p>起初submodule的URL添加到博客主仓库时用的是ssh的方式，导致Travis CI无权限拉取，最后换成了HTTPS的方式解决了。</p>
 <h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo 官方文档</a><br><a href="https://docs.travis-ci.com/user/deployment/pages/" target="_blank" rel="noopener">Travis CI GitHub Pages Provider</a><br><a href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm" target="_blank" rel="noopener">这个Hexo教程还不错</a></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/09/%E7%AC%AC%E4%B8%80%E7%AF%87/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="weigege">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="客官请留步">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/09/%E7%AC%AC%E4%B8%80%E7%AF%87/" class="post-title-link" itemprop="url">第一篇</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-09 22:32:43" itemprop="dateCreated datePublished" datetime="2020-01-09T22:32:43+00:00">2020-01-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-20 13:49:36" itemprop="dateModified" datetime="2020-01-20T13:49:36+00:00">2020-01-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A0%E4%B8%BB%E4%B9%8B%E5%9C%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">无主之地</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="写博客的最佳时机"><a href="#写博客的最佳时机" class="headerlink" title="写博客的最佳时机"></a>写博客的最佳时机</h3><p>三年前和今天</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/09/%E7%AC%AC%E4%B8%80%E7%AF%87/" rel="prev" title="第一篇">
+      <i class="fa fa-chevron-left"></i> 第一篇
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -450,6 +386,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#目标"><span class="nav-number">1.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客架构-amp-选择原因"><span class="nav-number">2.</span> <span class="nav-text">博客架构 &amp; 选择原因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建步骤"><span class="nav-number">3.</span> <span class="nav-text">搭建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo的准备"><span class="nav-number">3.1.</span> <span class="nav-text">安装Hexo的准备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo"><span class="nav-number">3.2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo使用"><span class="nav-number">3.3.</span> <span class="nav-text">Hexo使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建博客主仓库"><span class="nav-number">3.4.</span> <span class="nav-text">创建博客主仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#初始化git"><span class="nav-number">3.4.1.</span> <span class="nav-text">初始化git</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建hexo分支"><span class="nav-number">3.4.2.</span> <span class="nav-text">创建hexo分支</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#设置博客主仓库的remote"><span class="nav-number">3.4.3.</span> <span class="nav-text">设置博客主仓库的remote</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo主题"><span class="nav-number">3.5.</span> <span class="nav-text">Hexo主题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Fork-Hexo主题"><span class="nav-number">3.5.1.</span> <span class="nav-text">Fork Hexo主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装Hexo主题"><span class="nav-number">3.5.2.</span> <span class="nav-text">安装Hexo主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加主题submodule"><span class="nav-number">3.5.3.</span> <span class="nav-text">添加主题submodule</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Travis-CI"><span class="nav-number">3.6.</span> <span class="nav-text">Travis CI</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#配置"><span class="nav-number">3.6.1.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建-travis-yml"><span class="nav-number">3.6.2.</span> <span class="nav-text">创建 .travis.yml</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结一下搭建的过程"><span class="nav-number">4.</span> <span class="nav-text">总结一下搭建的过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">5.</span> <span class="nav-text">遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo官方教程的坑"><span class="nav-number">5.1.</span> <span class="nav-text">Hexo官方教程的坑</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主题和submodule的问题"><span class="nav-number">5.2.</span> <span class="nav-text">主题和submodule的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#主题的存放问题"><span class="nav-number">5.2.1.</span> <span class="nav-text">主题的存放问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#NOLAYOUT"><span class="nav-number">5.2.2.</span> <span class="nav-text">NOLAYOUT</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#submodule-无权限访问"><span class="nav-number">5.2.3.</span> <span class="nav-text">submodule 无权限访问</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
